@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Countdown</title>
+ </head>
+ <style>
+ body
+ {
+ background-color:blue;
+ }
+ h1
+ {
+ color:white;
+ }
+ </style>
+ <body>
+ <h1>Click on the button to start countdown<h1>
+ <button onclick="timeout()">Display TimeOut</button>
+ <input type="text" id="txt">
+ <script>
+ function timeout()
+ {
+  var x=document.getElementById("txt");
+ setTimeout(function(){x.value="10.."}, 1000);
+ setTimeout(function(){x.value="9.."}, 2000);
+setTimeout(function(){x.value="8.."}, 3000);
+setTimeout(function(){x.value="7.."}, 4000);
+setTimeout(function(){x.value="6.."}, 5000);
+setTimeout(function(){x.value="5.."}, 6000);
+setTimeout(function(){x.value="4.."}, 7000);
+setTimeout(function(){x.value="3.."}, 8000);
+setTimeout(function(){x.value="2.."}, 9000);
+setTimeout(function(){x.value="1.."}, 10000);
+setTimeout(function(){x.value="Happy Birthday"}, 11000);
+}
+ </script>
+ </body>
+ </html>
